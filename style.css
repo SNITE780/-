@@ -2,23 +2,23 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	
 }
 
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-	font-family: "IBM Plex Sans Arabic", sans-serif;
-  	font-weight: 500;
-  	font-style: normal;
 }
 
 body {
     direction: rtl;
     background-color: #E6F7F8;
     color: #333;
+
+	font-family: "Tajawal", sans-serif;
+  	font-weight: 100;
+  	font-style: normal;
 }
 
 .header-container {
@@ -32,22 +32,22 @@ body {
 }
 
 .logo {
-	font-family: "IBM Plex Sans Arabic", sans-serif;
-	font-size: 11px;
-  	font-style: normal;
-    font-size: 24px;
+	font-size: 26px;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
 
 nav {
+	font-weight: 500;
+	font-style: normal;
+
 	width: 70vw;
 	min-width: 600px;
     display: flex;
 	gap: 15px;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	margin: auto;
 }
 
@@ -55,15 +55,13 @@ nav {
 nav a{
 	position: relative;
 	text-decoration: none;
-	font-family: 'Poppnis',sans-serif;
 	color: white;
-	font-size: 18px;
 	letter-spacing: 0.5px;
 	padding: 0 10px;
 
 
 }
-nav a:hover{
+nav p:hover{
 	font-size: 18.5px;
 }
 nav a:after{
@@ -80,13 +78,9 @@ nav a:hover::after{
 	width: 100%;
 }
 
-
 .auth-buttons button {
-	font-family: "IBM Plex Sans Arabic", sans-serif;
-  	font-weight: 500;
-  	font-style: normal;
-
-	font-size: 11px;
+	opacity: 0.7;
+	font-size: 14px;
 	border-radius: 5px;
     background-color: #00A7A7;
     border: none;
@@ -101,7 +95,22 @@ nav a:hover::after{
     color: #00A7A7;
 }
 
-
+.auth-buttons .signup:hover{
+    background-color: #00A7A7;
+    color: #ffffff;
+	box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+	transition: 0.4s;
+	scale: 1.05;
+	opacity: 1;
+}
+.login:hover{
+	scale: 1.05;
+	background-color: white;
+	opacity: 1;
+    color: #00A7A7;
+	box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+	transition: 0.4s;
+}
 
 .website-container{
 	width: 100%;
@@ -115,40 +124,27 @@ nav a:hover::after{
 
 
 .welcom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.playervid {
-    position: relative;
-	right: 850px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 100px;
 }
 
 .text-welcom{
-	flex-direction: column
+	margin-top: 75px;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
 }
 
-.welcom h2 {
-	position: relative;
-	left: 350px;
-    margin-top: 5px;
-	font-size: 70px;
+.text-welcom p{
+	font-size: 26px;
 }
 
-.welcom div, .welcom h2, .welcom p {
-    font-family: Arial, sans-serif;
+.text-welcom h2{
+	font-size: 32px;
+	font-weight: 500;
 }
-
-.welcom p {
-	margin-top: 30px;
-    position: relative;
-	left: 400px;
-    flex-basis: 50%;
-	font-size: 30px;
-}
-
 
 
 section.home{
@@ -157,6 +153,7 @@ section.home{
 	min-height: 100vh;
 	background-color: var(--primary-light-clr);
 }
+
 .home .main-navbar{
 	position: absolute;
 	width: 100%;
@@ -407,6 +404,7 @@ section.home{
 
 /*  مكان لماذا تختارنا    */
 section.services{
+	
 	width: 100%;
 	padding: 100px 8% 20px;
 }
@@ -425,6 +423,7 @@ section.services{
 }
 .services-contents .service-box:hover{
 	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	background-color: #bbdfdc3f;
 	border-radius: 10px;
 }
 .service-box .service-icon{
